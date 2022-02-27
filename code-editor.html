@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Code Touch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./code-editor.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand">Code Touch</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tutorials.html">Tutorials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./code-editor.html">Code Editor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./questions.html">Questions & Answers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./exams.html">Certificate Exams</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid p-0">
+        <div class="container-fluid m-2">
+            <div class="row m-2" id="controls">
+                <button class="btn btn-light p-1 border rounded" onclick="show('html')">HTML</button>
+                <button class="btn btn-light p-1 border rounded" onclick="show('css')">CSS</button>
+                <button class="btn btn-light p-1 border rounded" onclick="show('js')">JS</button>
+                <button class="btn btn-primary p-1 border rounded" onclick="show('result')">Result</button>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12" id="html">
+                    <div class="container-fluid border rounded p-1 bg-dark text-light editor">
+                        <textarea id="htmlCode" placeholder="HTML Code" 
+                        oninput="showPreview()"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12" id="css">
+                    <div class="container-fluid border rounded p-1 bg-dark text-light editor">
+                        <textarea id="cssCode" placeholder="CSS Code" 
+                        oninput="showPreview()"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12" id="js">
+                    <div class="container-fluid border rounded p-1 bg-dark text-light editor">
+                        <textarea id="jsCode" placeholder="JavaScript Code" 
+                        oninput="showPreview()"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-2 mb-2" id="result">
+                    <div class="container-fluid border rounded p-1 result bg-white">
+                        <iframe id="preview-window"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+</body>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./code-editor.js"></script>
+</html>

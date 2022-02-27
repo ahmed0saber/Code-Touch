@@ -1,0 +1,34 @@
+div.ans_btn_container{
+    margin: 10px 0;
+}
+a.answer_btn{
+    text-decoration: none;
+    padding: 8px 24px;
+    background-color: #e3e3e3;
+    color: #080808;
+    font-size: 16px;
+}
+a.answer_btn:hover{
+    opacity: 0.8;
+}
+a.answer_btn:active{
+    color: #e3e3e3;
+    background-color: #080808;
+}
+.answer{
+    opacity: 0;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #fff;
+    transition-duration: 0.4s;
+}
+.answer:target{
+    opacity: 1;
+}
+h5{
+    color: #080808;
+}
+p{
+    color: #080808;
+    font-size: 15px;
+}
