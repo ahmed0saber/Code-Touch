@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: monospace, "Akaya Telivigala", "Dancing Script";
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: #F8F9FA;
 }
